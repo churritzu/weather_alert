@@ -1,6 +1,17 @@
 #! /usr/bin/python3
 
-import json, requests, time
+import json, requests, time, datetime
+
+class Bcolors:
+	OKGREEN = '\033[92m'
+	WARNING = '\033[93m'
+	FAIL = '\033[91m'
+	ENDC = '\033[0m'
+
+class ErrorTypes:
+	ALERT = "[ERROR]"
+	WARNING = "[WARNING]"
+	INFO =  "[INFO]"
 
 messages = {
 	"es":{
@@ -26,6 +37,13 @@ messages = {
 		}
 	}
 }
+
+def log(message, type = ErrorTypes.INFO):
+	diafecha = str(datetime.datetime.now())
+	full_message = type + " [" + diafecha + "]: " + message
+
+	open("logs.txt", 'a').write(full_message + "\n")
+	return full_message 
 
 def read_conf_file():
   data = None

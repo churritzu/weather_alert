@@ -2,6 +2,31 @@
 
 import json, requests, time
 
+messages = {
+	"es":{
+		"errors":{
+			"404": "No se encontro el servidor",
+			"503": "Servicio no disponible."
+		},
+		"response":{
+			"alert": "Como quieres tus huevos al sol?",
+			"warning": "Se necesita prender la refrigeracion",
+			"normal": "A todo dar, ten un buen dia",
+		}
+	},
+	"en":{
+		"errors":{
+			"404": "Server not found",
+			"503": "Service Unavailable"
+		},
+		"response":{
+			"alert": "My god, the planet is melting",
+			"warning": "We need to turn on the cooling",
+			"normal": "Oh boy, what a good day."
+		}
+	}
+}
+
 def read_conf_file():
   data = None
   with open("./wa-conf.json") as conf_file: data = json.load(conf_file)

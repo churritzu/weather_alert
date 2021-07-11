@@ -16,24 +16,24 @@ class ErrorTypes:
 messages = {
 	"es":{
 		"errors":{
-			"404": "No se encontro el servidor",
-			"503": "Servicio no disponible."
+			"404": "⛔️ No se encontro el servidor",
+			"503": "⛔️ Servicio no disponible."
 		},
 		"response":{
-			"alert": "Como quieres tus huevos al sol? 🥵",
-			"warning": "Se necesita prender la refrigeracion 😥",
-			"normal": "A todo dar, ten un buen dia 🥶",
+			"alert": "Como quieres tus huevos al sol? 🥵 🔥 ",
+			"warning": "Se necesita prender la refrigeracion. 😥 ☀️",
+			"normal": "A todo dar, ten un buen dia. 🥶 🌈",
 		}
 	},
 	"en":{
 		"errors":{
-			"404": "Server not found",
-			"503": "Service Unavailable"
+			"404": "⛔️ Server not found",
+			"503": "⛔️ Service Unavailable"
 		},
 		"response":{
-			"alert": "My god, the planet is melting",
-			"warning": "We need to turn on the cooling",
-			"normal": "Oh boy, what a good day."
+			"alert": "My god, the planet is melting. 🥵 🔥 ",
+			"warning": "We need to turn on the cooling. 😥 ☀",
+			"normal": "Oh boy, what a good day. 🥶 🌈"
 		}
 	}
 }
